@@ -1,0 +1,1014 @@
+{
+ "schema": 1,
+ "components": [
+  {
+   "id": "song",
+   "label": "Song creation",
+   "required": true,
+   "default": true,
+   "detail": "Style + lyrics to a finished song (YuE2)"
+  },
+  {
+   "id": "cover",
+   "label": "Cover maker",
+   "required": false,
+   "default": true,
+   "detail": "Turn a recording into a new song with its melody (SheetSage2)"
+  },
+  {
+   "id": "legacy",
+   "label": "Benchmark decoder",
+   "required": false,
+   "default": false,
+   "detail": "The paper's evaluation decoder - most people never need it"
+  }
+ ],
+ "items": [
+  {
+   "id": "model:YuE2-3B",
+   "kind": "model",
+   "component": "song",
+   "repo": "m-a-p/YuE2-3B",
+   "revision": "29b3558dd46954a0cd9021dc76d5c91864a0f1c7",
+   "dest": "models/YuE2-3B",
+   "size": 7264082775,
+   "files": [
+    {
+     "path": ".gitattributes",
+     "size": 2134,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/.gitattributes"
+    },
+    {
+     "path": "LICENSE",
+     "size": 20309,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/LICENSE"
+    },
+    {
+     "path": "README.md",
+     "size": 19745,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/README.md"
+    },
+    {
+     "path": "THIRD_PARTY_NOTICES.md",
+     "size": 793,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/THIRD_PARTY_NOTICES.md"
+    },
+    {
+     "path": "config.json",
+     "size": 959,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/config.json"
+    },
+    {
+     "path": "generation_config.json",
+     "size": 204,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/generation_config.json"
+    },
+    {
+     "path": "licenses/SnakeBeta-NVIDIA-MIT.txt",
+     "size": 1076,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/licenses/SnakeBeta-NVIDIA-MIT.txt"
+    },
+    {
+     "path": "licenses/stable-audio-tools-MIT.txt",
+     "size": 1069,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/licenses/stable-audio-tools-MIT.txt"
+    },
+    {
+     "path": "model.safetensors",
+     "size": 7261441640,
+     "sha256": "1d55c42c1a9875c34f5d736e15078449992b044e807ce2a138e6cf289a1e59e9",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/model.safetensors"
+    },
+    {
+     "path": "modeling_yue2.py",
+     "size": 32983,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/modeling_yue2.py"
+    },
+    {
+     "path": "qwen.tiktoken",
+     "size": 2561218,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/qwen.tiktoken"
+    },
+    {
+     "path": "weights_manifest.json",
+     "size": 179,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/weights_manifest.json"
+    },
+    {
+     "path": "yue2_generation_config.json",
+     "size": 466,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/29b3558dd46954a0cd9021dc76d5c91864a0f1c7/yue2_generation_config.json"
+    }
+   ]
+  },
+  {
+   "id": "model:YuE2-Vae",
+   "kind": "model",
+   "component": "song",
+   "repo": "m-a-p/YuE2-Vae",
+   "revision": "9a94e1d0ea9f8087e98f77fa88df4a4068104d2a",
+   "dest": "models/YuE2-Vae",
+   "size": 530573783,
+   "files": [
+    {
+     "path": ".gitattributes",
+     "size": 1634,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae/resolve/9a94e1d0ea9f8087e98f77fa88df4a4068104d2a/.gitattributes"
+    },
+    {
+     "path": "LICENSE",
+     "size": 20309,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae/resolve/9a94e1d0ea9f8087e98f77fa88df4a4068104d2a/LICENSE"
+    },
+    {
+     "path": "README.md",
+     "size": 9361,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae/resolve/9a94e1d0ea9f8087e98f77fa88df4a4068104d2a/README.md"
+    },
+    {
+     "path": "THIRD_PARTY_NOTICES.md",
+     "size": 793,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae/resolve/9a94e1d0ea9f8087e98f77fa88df4a4068104d2a/THIRD_PARTY_NOTICES.md"
+    },
+    {
+     "path": "config.json",
+     "size": 1378,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae/resolve/9a94e1d0ea9f8087e98f77fa88df4a4068104d2a/config.json"
+    },
+    {
+     "path": "licenses/SnakeBeta-NVIDIA-MIT.txt",
+     "size": 1076,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae/resolve/9a94e1d0ea9f8087e98f77fa88df4a4068104d2a/licenses/SnakeBeta-NVIDIA-MIT.txt"
+    },
+    {
+     "path": "licenses/stable-audio-tools-MIT.txt",
+     "size": 1069,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae/resolve/9a94e1d0ea9f8087e98f77fa88df4a4068104d2a/licenses/stable-audio-tools-MIT.txt"
+    },
+    {
+     "path": "model.safetensors",
+     "size": 530512720,
+     "sha256": "807ce9d5149fa27c5ad3e6582058469852e908f6c5acc8c8aa338e7ab7751346",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae/resolve/9a94e1d0ea9f8087e98f77fa88df4a4068104d2a/model.safetensors"
+    },
+    {
+     "path": "modeling_vae.py",
+     "size": 25265,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae/resolve/9a94e1d0ea9f8087e98f77fa88df4a4068104d2a/modeling_vae.py"
+    },
+    {
+     "path": "weights_manifest.json",
+     "size": 178,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae/resolve/9a94e1d0ea9f8087e98f77fa88df4a4068104d2a/weights_manifest.json"
+    }
+   ]
+  },
+  {
+   "id": "model:SheetSage2",
+   "kind": "model",
+   "component": "cover",
+   "repo": "m-a-p/SheetSage2",
+   "revision": "eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+   "dest": "models/SheetSage2",
+   "size": 229015486,
+   "files": [
+    {
+     "path": ".gitattributes",
+     "size": 134,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/.gitattributes"
+    },
+    {
+     "path": "LICENSE",
+     "size": 20000,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/LICENSE"
+    },
+    {
+     "path": "README.md",
+     "size": 10929,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/README.md"
+    },
+    {
+     "path": "THIRD_PARTY_NOTICES.md",
+     "size": 589,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/THIRD_PARTY_NOTICES.md"
+    },
+    {
+     "path": "__init__.py",
+     "size": 39,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/__init__.py"
+    },
+    {
+     "path": "audio_sheetsage2.py",
+     "size": 4289,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/audio_sheetsage2.py"
+    },
+    {
+     "path": "benchmark_results.json",
+     "size": 8643,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/benchmark_results.json"
+    },
+    {
+     "path": "config.json",
+     "size": 2060,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/config.json"
+    },
+    {
+     "path": "configuration_mert2.py",
+     "size": 3860,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/configuration_mert2.py"
+    },
+    {
+     "path": "configuration_sheetsage2.py",
+     "size": 4119,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/configuration_sheetsage2.py"
+    },
+    {
+     "path": "durations_sheetsage2.py",
+     "size": 296,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/durations_sheetsage2.py"
+    },
+    {
+     "path": "exports_sheetsage2.py",
+     "size": 9820,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/exports_sheetsage2.py"
+    },
+    {
+     "path": "generation_sheetsage2.py",
+     "size": 24722,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/generation_sheetsage2.py"
+    },
+    {
+     "path": "infer.py",
+     "size": 4253,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/infer.py"
+    },
+    {
+     "path": "io_sheetsage2.py",
+     "size": 1830,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/io_sheetsage2.py"
+    },
+    {
+     "path": "labels_sheetsage2.py",
+     "size": 978,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/labels_sheetsage2.py"
+    },
+    {
+     "path": "midi_sheetsage2.py",
+     "size": 4230,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/midi_sheetsage2.py"
+    },
+    {
+     "path": "model.safetensors",
+     "size": 228738564,
+     "sha256": "b235f68091a5f5b644000f2b5acb57d1e70432aca2b34ab1b9cf27236e1f4274",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/model.safetensors"
+    },
+    {
+     "path": "modeling_mert2.py",
+     "size": 17081,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/modeling_mert2.py"
+    },
+    {
+     "path": "modeling_sheetsage2.py",
+     "size": 24602,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/modeling_sheetsage2.py"
+    },
+    {
+     "path": "notation_sheetsage2.py",
+     "size": 55775,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/notation_sheetsage2.py"
+    },
+    {
+     "path": "pipeline_sheetsage2.py",
+     "size": 15022,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/pipeline_sheetsage2.py"
+    },
+    {
+     "path": "processing_sheetsage2.py",
+     "size": 5346,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/processing_sheetsage2.py"
+    },
+    {
+     "path": "processor_config.json",
+     "size": 277,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/processor_config.json"
+    },
+    {
+     "path": "render.py",
+     "size": 1927,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/render.py"
+    },
+    {
+     "path": "rendering_sheetsage2.py",
+     "size": 15862,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/rendering_sheetsage2.py"
+    },
+    {
+     "path": "requirements-render.txt",
+     "size": 58,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/requirements-render.txt"
+    },
+    {
+     "path": "requirements.txt",
+     "size": 190,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/requirements.txt"
+    },
+    {
+     "path": "schema_sheetsage2.py",
+     "size": 3893,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/schema_sheetsage2.py"
+    },
+    {
+     "path": "setup_render.py",
+     "size": 1540,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/setup_render.py"
+    },
+    {
+     "path": "tensors_sheetsage2.py",
+     "size": 4645,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/tensors_sheetsage2.py"
+    },
+    {
+     "path": "tokenization_sheetsage2.py",
+     "size": 29913,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/tokenization_sheetsage2.py"
+    }
+   ]
+  },
+  {
+   "id": "model:MERT-v2-FullSong",
+   "kind": "model",
+   "component": "cover",
+   "repo": "m-a-p/MERT-v2-FullSong",
+   "revision": "d8ba1c745e733b3908ce6ad16ebeb17ac7600a42",
+   "dest": "models/MERT-v2-FullSong",
+   "size": 2529876669,
+   "files": [
+    {
+     "path": ".gitattributes",
+     "size": 1585,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong/resolve/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42/.gitattributes"
+    },
+    {
+     "path": "LICENSE",
+     "size": 20000,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong/resolve/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42/LICENSE"
+    },
+    {
+     "path": "README.md",
+     "size": 10419,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong/resolve/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42/README.md"
+    },
+    {
+     "path": "THIRD_PARTY_NOTICES.md",
+     "size": 541,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong/resolve/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42/THIRD_PARTY_NOTICES.md"
+    },
+    {
+     "path": "config.json",
+     "size": 882,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong/resolve/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42/config.json"
+    },
+    {
+     "path": "configuration_mert2.py",
+     "size": 3860,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong/resolve/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42/configuration_mert2.py"
+    },
+    {
+     "path": "marble_results.json",
+     "size": 8997,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong/resolve/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42/marble_results.json"
+    },
+    {
+     "path": "model.safetensors",
+     "size": 2529812848,
+     "sha256": "e6dd2ab187d6dd62b6521cd7d8f932e237acf0c5757745a7232082e28391350d",
+     "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong/resolve/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42/model.safetensors"
+    },
+    {
+     "path": "modeling_mert2.py",
+     "size": 17081,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong/resolve/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42/modeling_mert2.py"
+    },
+    {
+     "path": "preprocessor_config.json",
+     "size": 215,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong/resolve/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42/preprocessor_config.json"
+    },
+    {
+     "path": "weights_manifest.json",
+     "size": 241,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong/resolve/d8ba1c745e733b3908ce6ad16ebeb17ac7600a42/weights_manifest.json"
+    }
+   ]
+  },
+  {
+   "id": "model:YuE2-Vae-legacy",
+   "kind": "model",
+   "component": "legacy",
+   "repo": "m-a-p/YuE2-Vae-legacy",
+   "revision": "5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9",
+   "dest": "models/YuE2-Vae-legacy",
+   "size": 530573418,
+   "files": [
+    {
+     "path": ".gitattributes",
+     "size": 1634,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae-legacy/resolve/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9/.gitattributes"
+    },
+    {
+     "path": "LICENSE",
+     "size": 20309,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae-legacy/resolve/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9/LICENSE"
+    },
+    {
+     "path": "README.md",
+     "size": 8998,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae-legacy/resolve/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9/README.md"
+    },
+    {
+     "path": "THIRD_PARTY_NOTICES.md",
+     "size": 793,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae-legacy/resolve/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9/THIRD_PARTY_NOTICES.md"
+    },
+    {
+     "path": "config.json",
+     "size": 1376,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae-legacy/resolve/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9/config.json"
+    },
+    {
+     "path": "licenses/SnakeBeta-NVIDIA-MIT.txt",
+     "size": 1076,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae-legacy/resolve/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9/licenses/SnakeBeta-NVIDIA-MIT.txt"
+    },
+    {
+     "path": "licenses/stable-audio-tools-MIT.txt",
+     "size": 1069,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae-legacy/resolve/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9/licenses/stable-audio-tools-MIT.txt"
+    },
+    {
+     "path": "model.safetensors",
+     "size": 530512720,
+     "sha256": "b6d283628913bb41145ba99e2314eef613905ee95f690eb70e8212d5f4965044",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae-legacy/resolve/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9/model.safetensors"
+    },
+    {
+     "path": "modeling_vae.py",
+     "size": 25265,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae-legacy/resolve/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9/modeling_vae.py"
+    },
+    {
+     "path": "weights_manifest.json",
+     "size": 178,
+     "sha256": "",
+     "url": "https://huggingface.co/m-a-p/YuE2-Vae-legacy/resolve/5ddd12f79acb90d24b3a672dcd2ebf88da7c92a9/weights_manifest.json"
+    }
+   ]
+  },
+  {
+   "id": "tool:uv",
+   "kind": "archive",
+   "component": "song",
+   "url": "https://github.com/astral-sh/uv/releases/download/0.12.13/uv-x86_64-pc-windows-msvc.zip",
+   "size": 17612025,
+   "sha256": "a86c9dc7bad9b03f388583b7187c05fe9951c2e0d392217e8fd43d97787f6ec2",
+   "dest": "runtime/uv",
+   "strip": null
+  },
+  {
+   "id": "python:yue2",
+   "kind": "archive",
+   "component": "song",
+   "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14%2B20260901-x86_64-pc-windows-msvc-install_only_stripped.tar.gz",
+   "size": 21980728,
+   "sha256": "7c45c9622400d578709a9b2cddbe8124cc21d382409d9f13406d706d28e31b14",
+   "dest": "runtime/yue2",
+   "strip": "python"
+  },
+  {
+   "id": "python:sheetsage",
+   "kind": "archive",
+   "component": "cover",
+   "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.11.16%2B20260901-x86_64-pc-windows-msvc-install_only_stripped.tar.gz",
+   "size": 25189257,
+   "sha256": "06cbe479e039f5b9cb5640c286d790074d63f549f92a32d599a3748293bd4510",
+   "dest": "runtime/sheetsage",
+   "strip": "python"
+  },
+  {
+   "id": "tool:ffmpeg",
+   "kind": "archive",
+   "component": "cover",
+   "url": "https://github.com/GyanD/codexffmpeg/releases/download/6.1.1/ffmpeg-6.1.1-full_build-shared.zip",
+   "size": 61137843,
+   "sha256": "50032b867c3ce74d682d2e9321e9d2a4b8bed37a09cba41b3980015658ffd498",
+   "dest": "runtime/ffmpeg",
+   "strip": "ffmpeg-6.1.1-full_build-shared"
+  },
+  {
+   "id": "env:yue2",
+   "kind": "wheels",
+   "component": "song",
+   "python": "runtime/yue2/python.exe",
+   "lock": "setup/locks/pylock.yue2.toml",
+   "size": 2913939303,
+   "wheels": [
+    {
+     "name": "accelerate",
+     "url": "https://files.pythonhosted.org/packages/7e/46/02ac5e262d4af18054b3e922b2baedbb2a03289ee792162de60a865defc5/accelerate-1.13.0-py3-none-any.whl",
+     "size": 383744,
+     "sha256": "cf1a3efb96c18f7b152eb0fa7490f3710b19c3f395699358f08decca2b8b62e0"
+    },
+    {
+     "name": "certifi",
+     "url": "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl",
+     "size": 136983,
+     "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+    },
+    {
+     "name": "cffi",
+     "url": "https://files.pythonhosted.org/packages/d9/79/615cc094e2fb508cade7de88d3b4f6c4ec2bab695c97bce9153dc65aadf5/cffi-2.1.1-cp312-cp312-win_amd64.whl",
+     "size": 185919,
+     "sha256": "f53e442b08449d42821fa4a4fba000095af9f62742a500f978a9f557ec44339a"
+    },
+    {
+     "name": "charset-normalizer",
+     "url": "https://files.pythonhosted.org/packages/9d/7a/4c6c298171e6b3e745633180ff59350fc0ca0db1ffd28df1e369e0579f71/charset_normalizer-3.5.1-cp312-cp312-win_amd64.whl",
+     "size": 200551,
+     "sha256": "3617ac3cfd8b9888f145ad89dd6e692285834b0201c6074a5eeaad3fd4d668c2"
+    },
+    {
+     "name": "colorama",
+     "url": "https://download.pytorch.org/whl/colorama-0.4.6-py2.py3-none-any.whl",
+     "size": 25335,
+     "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+    },
+    {
+     "name": "filelock",
+     "url": "https://files.pythonhosted.org/packages/cc/06/4f138f618dbea66803291274f228f01daf29f306fe8b96bc30dab765df75/filelock-3.32.6-py3-none-any.whl",
+     "size": 100189,
+     "sha256": "3f16ecd0117feae0dfc147e8c62eb5daeccd8bd800378c3ddf416de9b4feb6b1"
+    },
+    {
+     "name": "fsspec",
+     "url": "https://files.pythonhosted.org/packages/fd/3c/6a2bf344106328fd04963664a60b9bb6496fc25df8e962fcdc1367285fb9/fsspec-2026.7.0-py3-none-any.whl",
+     "size": 206583,
+     "sha256": "b57ddbafedfaef7018c1ecab32aa200a9d7ca26b77965f64e48b70061249d279"
+    },
+    {
+     "name": "hf-xet",
+     "url": "https://files.pythonhosted.org/packages/98/b7/8c59a66d15205024662f1d66968136f13893f96df1ddc5087e2e281fc95f/hf_xet-1.6.0-cp38-abi3-win_amd64.whl",
+     "size": 4033128,
+     "sha256": "fb4fadde1b2b70bf4c0c14a6dccbe7194b1c28947fefd5bbe3fed9d940676c3b"
+    },
+    {
+     "name": "huggingface-hub",
+     "url": "https://files.pythonhosted.org/packages/a8/af/48ac8483240de756d2438c380746e7130d1c6f75802ef22f3c6d49982787/huggingface_hub-0.36.2-py3-none-any.whl",
+     "size": 566395,
+     "sha256": "48f0c8eac16145dfce371e9d2d7772854a4f591bcb56c9cf548accf531d54270"
+    },
+    {
+     "name": "idna",
+     "url": "https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl",
+     "size": 68550,
+     "sha256": "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4"
+    },
+    {
+     "name": "jinja2",
+     "url": "https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl",
+     "size": 134899,
+     "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67"
+    },
+    {
+     "name": "markupsafe",
+     "url": "https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-win_amd64.whl",
+     "size": 15105,
+     "sha256": "26a5784ded40c9e318cfc2bdb30fe164bdb8665ded9cd64d500a34fb42067b1c"
+    },
+    {
+     "name": "mpmath",
+     "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+     "size": 536198,
+     "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+    },
+    {
+     "name": "networkx",
+     "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
+     "size": 2068504,
+     "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762"
+    },
+    {
+     "name": "numpy",
+     "url": "https://files.pythonhosted.org/packages/36/fa/8c9210162ca1b88529ab76b41ba02d433fd54fecaf6feb70ef9f124683f1/numpy-2.2.6-cp312-cp312-win_amd64.whl",
+     "size": 12614190,
+     "sha256": "c1f9540be57940698ed329904db803cf7a402f3fc200bfe599334c9bd84a40b2"
+    },
+    {
+     "name": "packaging",
+     "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+     "size": 129956,
+     "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+     "name": "psutil",
+     "url": "https://files.pythonhosted.org/packages/b4/90/e2159492b5426be0c1fef7acba807a03511f97c5f86b3caeda6ad92351a7/psutil-7.2.2-cp37-abi3-win_amd64.whl",
+     "size": 137737,
+     "sha256": "eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988"
+    },
+    {
+     "name": "pycparser",
+     "url": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+     "size": 48172,
+     "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992"
+    },
+    {
+     "name": "pyyaml",
+     "url": "https://files.pythonhosted.org/packages/86/bf/899e81e4cce32febab4fb42bb97dcdf66bc135272882d1987881a4b519e9/pyyaml-6.0.3-cp312-cp312-win_amd64.whl",
+     "size": 154003,
+     "sha256": "5fcd34e47f6e0b794d17de1b4ff496c00986e1c83f7ab2fb8fcfe9616ff7477b"
+    },
+    {
+     "name": "regex",
+     "url": "https://files.pythonhosted.org/packages/ad/d4/4dcd0a05d3e97ca829165df1c39717f899d1d484dac8a6032439f2cb8d6d/regex-2026.9.10-cp312-cp312-win_amd64.whl",
+     "size": 277933,
+     "sha256": "4db7d00c4afbfbb55b8e17b1e371da11418ea9389b030acec63c1fa4c7ad4b86"
+    },
+    {
+     "name": "requests",
+     "url": "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl",
+     "size": 73075,
+     "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0"
+    },
+    {
+     "name": "safetensors",
+     "url": "https://files.pythonhosted.org/packages/5d/e6/ec8471c8072382cb91233ba7267fd931219753bb43814cbc71757bfd4dab/safetensors-0.7.0-cp38-abi3-win_amd64.whl",
+     "size": 341380,
+     "sha256": "d1239932053f56f3456f32eb9625590cc7582e905021f94636202a864d470755"
+    },
+    {
+     "name": "setuptools",
+     "url": "https://files.pythonhosted.org/packages/95/9c/c510029fc6ef33a6275cd2c5d3cecd6613dfd6aa401d57c54f1c18852ccf/setuptools-84.0.0-py3-none-any.whl",
+     "size": 818216,
+     "sha256": "51a52592b3b99e102b609654876bd65f19f999935166d1352678931132b0c670"
+    },
+    {
+     "name": "soundfile",
+     "url": "https://files.pythonhosted.org/packages/14/e9/6b761de83277f2f02ded7e7ea6f07828ec78e4b229b80e4ca55dd205b9dc/soundfile-0.13.1-py2.py3-none-win_amd64.whl",
+     "size": 1019162,
+     "sha256": "1e70a05a0626524a69e9f0f4dd2ec174b4e9567f4d8b6c11d38b5c289be36ee9"
+    },
+    {
+     "name": "sympy",
+     "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+     "size": 6299353,
+     "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5"
+    },
+    {
+     "name": "tiktoken",
+     "url": "https://files.pythonhosted.org/packages/81/10/b8523105c590c5b8349f2587e2fdfe51a69544bd5a76295fc20f2374f470/tiktoken-0.12.0-cp312-cp312-win_amd64.whl",
+     "size": 878694,
+     "sha256": "ffc5288f34a8bc02e1ea7047b8d041104791d2ddbf42d1e5fa07822cbffe16bd"
+    },
+    {
+     "name": "tokenizers",
+     "url": "https://files.pythonhosted.org/packages/65/71/0670843133a43d43070abeb1949abfdef12a86d490bea9cd9e18e37c5ff7/tokenizers-0.22.2-cp39-abi3-win_amd64.whl",
+     "size": 2747786,
+     "sha256": "c9ea31edff2968b44a88f97d784c2f16dc0729b8b143ed004699ebca91f05c48"
+    },
+    {
+     "name": "torch",
+     "url": "https://download-r2.pytorch.org/whl/cu128/torch-2.10.0%2Bcu128-cp312-cp312-win_amd64.whl",
+     "size": 2867409626,
+     "sha256": "fbde8f6a9ec8c76979a0d14df21c10b9e5cab6f0d106a73ca73e2179bc597cae"
+    },
+    {
+     "name": "tqdm",
+     "url": "https://files.pythonhosted.org/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl",
+     "size": 80199,
+     "sha256": "c293e525e6fef9c20e8728fd4612df02a0aa31bb5fe91ecd93e123b1b7bffa73"
+    },
+    {
+     "name": "transformers",
+     "url": "https://files.pythonhosted.org/packages/03/b8/e484ef633af3887baeeb4b6ad12743363af7cce68ae51e938e00aaa0529d/transformers-4.57.6-py3-none-any.whl",
+     "size": 11993498,
+     "sha256": "4c9e9de11333ddfe5114bc872c9f370509198acf0b87a832a0ab9458e2bd0550"
+    },
+    {
+     "name": "typing-extensions",
+     "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+     "size": 45571,
+     "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    },
+    {
+     "name": "urllib3",
+     "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
+     "size": 131087,
+     "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897"
+    },
+    {
+     "name": "yue2-infer",
+     "url": "https://github.com/multimodal-art-projection/YuE/releases/download/yue2-v0.1.6/yue2_infer-0.1.6-py3-none-any.whl",
+     "size": 77582,
+     "sha256": "129a015327a2eca530760ffd2163ccb8cb65f7e601715de1d9626a40c568e2e2"
+    }
+   ]
+  },
+  {
+   "id": "env:sheetsage",
+   "kind": "wheels",
+   "component": "cover",
+   "python": "runtime/sheetsage/python.exe",
+   "lock": "setup/locks/pylock.sheetsage.toml",
+   "size": 3016893305,
+   "wheels": [
+    {
+     "name": "certifi",
+     "url": "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl",
+     "size": 136983,
+     "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+    },
+    {
+     "name": "cffi",
+     "url": "https://files.pythonhosted.org/packages/73/c0/77ba02423c2f7d7091143c45cd49e0e6575c4c1967394bb542bd923a9b74/cffi-2.1.1-cp311-cp311-win_amd64.whl",
+     "size": 185096,
+     "sha256": "42f6930c31dc7f50732c9ae793c2786c7b6b044195967bbdde40bb9be81c4cc0"
+    },
+    {
+     "name": "charset-normalizer",
+     "url": "https://files.pythonhosted.org/packages/e3/57/32f0ccea59e8612057c61d6fd22ef2cb63cca93c9fe594094919696ac170/charset_normalizer-3.5.1-cp311-cp311-win_amd64.whl",
+     "size": 206653,
+     "sha256": "f9b1e28d0e8dbfa858abdba91d6b547beaf2df1a59bec6da6faae7b96a4991a9"
+    },
+    {
+     "name": "colorama",
+     "url": "https://download.pytorch.org/whl/colorama-0.4.6-py2.py3-none-any.whl",
+     "size": 25335,
+     "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+    },
+    {
+     "name": "decorator",
+     "url": "https://files.pythonhosted.org/packages/05/7f/798705f5296a58ca505d600456748d1be48078eac8a7050d8a98bc9edb89/decorator-5.3.1-py3-none-any.whl",
+     "size": 10365,
+     "sha256": "f47fe6fdbd2edd623ecfe36875d37aba411624e2670dd395dddae1358689bb3c"
+    },
+    {
+     "name": "filelock",
+     "url": "https://files.pythonhosted.org/packages/cc/06/4f138f618dbea66803291274f228f01daf29f306fe8b96bc30dab765df75/filelock-3.32.6-py3-none-any.whl",
+     "size": 100189,
+     "sha256": "3f16ecd0117feae0dfc147e8c62eb5daeccd8bd800378c3ddf416de9b4feb6b1"
+    },
+    {
+     "name": "fsspec",
+     "url": "https://files.pythonhosted.org/packages/fd/3c/6a2bf344106328fd04963664a60b9bb6496fc25df8e962fcdc1367285fb9/fsspec-2026.7.0-py3-none-any.whl",
+     "size": 206583,
+     "sha256": "b57ddbafedfaef7018c1ecab32aa200a9d7ca26b77965f64e48b70061249d279"
+    },
+    {
+     "name": "hf-xet",
+     "url": "https://files.pythonhosted.org/packages/98/b7/8c59a66d15205024662f1d66968136f13893f96df1ddc5087e2e281fc95f/hf_xet-1.6.0-cp38-abi3-win_amd64.whl",
+     "size": 4033128,
+     "sha256": "fb4fadde1b2b70bf4c0c14a6dccbe7194b1c28947fefd5bbe3fed9d940676c3b"
+    },
+    {
+     "name": "huggingface-hub",
+     "url": "https://files.pythonhosted.org/packages/cb/bd/1a875e0d592d447cbc02805fd3fe0f497714d6a2583f59d14fa9ebad96eb/huggingface_hub-0.36.0-py3-none-any.whl",
+     "size": 566094,
+     "sha256": "7bcc9ad17d5b3f07b57c78e79d527102d08313caa278a641993acddcb894548d"
+    },
+    {
+     "name": "idna",
+     "url": "https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl",
+     "size": 68550,
+     "sha256": "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4"
+    },
+    {
+     "name": "jinja2",
+     "url": "https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl",
+     "size": 134899,
+     "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67"
+    },
+    {
+     "name": "markupsafe",
+     "url": "https://download.pytorch.org/whl/markupsafe-3.0.3-cp311-cp311-win_amd64.whl",
+     "size": 15077,
+     "sha256": "de8a88e63464af587c950061a5e6a67d3632e36df62b986892331d4620a35c01"
+    },
+    {
+     "name": "mido",
+     "url": "https://files.pythonhosted.org/packages/fd/28/45deb15c11859d2f10702b32e71de9328a9fa494f989626916db39a9617f/mido-1.3.3-py3-none-any.whl",
+     "size": 54614,
+     "sha256": "01033c9b10b049e4436fca2762194ca839b09a4334091dd3c34e7f4ae674fd8a"
+    },
+    {
+     "name": "mir-eval",
+     "url": "https://files.pythonhosted.org/packages/1b/5a/69ce896a32ebc8c75deae00b1fba9837567405fa6ef37b377f2e85b856ae/mir_eval-0.8.2-py3-none-any.whl",
+     "size": 102794,
+     "sha256": "114cda33d8e17408c170598e0b36ed0d71ff4a2fee8eaf9e165b58ecf1c87170"
+    },
+    {
+     "name": "mpmath",
+     "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+     "size": 536198,
+     "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+    },
+    {
+     "name": "networkx",
+     "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
+     "size": 2068504,
+     "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762"
+    },
+    {
+     "name": "numpy",
+     "url": "https://files.pythonhosted.org/packages/f0/e8/1ea9adebdccaadfc208c7517e09f5145ed5a73069779ff436393085d47a2/numpy-1.24.3-cp311-cp311-win_amd64.whl",
+     "size": 14833773,
+     "sha256": "5342cf6aad47943286afa6f1609cad9b4266a05e7f2ec408e2cf7aea7ff69d80"
+    },
+    {
+     "name": "packaging",
+     "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+     "size": 129956,
+     "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+     "name": "pretty-midi",
+     "url": "https://files.pythonhosted.org/packages/c2/81/f3e47efdf65eab347d1b78e8279222f6e3122d722cc9d68d443503a3c0e7/pretty_midi-0.2.10.tar.gz",
+     "size": 5592108,
+     "sha256": "ea6e192f94044674e833336ea1f415318ddf28e320302ac7b109edff0d4534bd",
+     "build": true
+    },
+    {
+     "name": "pycparser",
+     "url": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+     "size": 48172,
+     "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992"
+    },
+    {
+     "name": "pyyaml",
+     "url": "https://files.pythonhosted.org/packages/da/e3/ea007450a105ae919a72393cb06f122f288ef60bba2dc64b26e2646fa315/pyyaml-6.0.3-cp311-cp311-win_amd64.whl",
+     "size": 158763,
+     "sha256": "9f3bfb4965eb874431221a3ff3fdcddc7e74e3b07799e0e84ca4a0f867d449bf"
+    },
+    {
+     "name": "regex",
+     "url": "https://files.pythonhosted.org/packages/0c/7f/2d39cd798871b683409cd14ab4458f60e53db86591028a8244c3155f2e92/regex-2026.9.10-cp311-cp311-win_amd64.whl",
+     "size": 278263,
+     "sha256": "ce7c118cb102975f974585688357a717ffbf9dddd64ab0bb1bc93eb5b367cf95"
+    },
+    {
+     "name": "requests",
+     "url": "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl",
+     "size": 73075,
+     "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0"
+    },
+    {
+     "name": "safetensors",
+     "url": "https://files.pythonhosted.org/packages/69/e2/b011c38e5394c4c18fb5500778a55ec43ad6106126e74723ffaee246f56e/safetensors-0.5.3-cp38-abi3-win_amd64.whl",
+     "size": 308878,
+     "sha256": "836cbbc320b47e80acd40e44c8682db0e8ad7123209f69b093def21ec7cafd11"
+    },
+    {
+     "name": "scipy",
+     "url": "https://files.pythonhosted.org/packages/4a/48/4513a1a5623a23e95f94abd675ed91cfb19989c58e9f6f7d03990f6caf3d/scipy-1.13.1-cp311-cp311-win_amd64.whl",
+     "size": 46196227,
+     "sha256": "5713f62f781eebd8d597eb3f88b8bf9274e79eeabf63afb4a737abc6c84ad37b"
+    },
+    {
+     "name": "setuptools",
+     "url": "https://files.pythonhosted.org/packages/90/99/158ad0609729111163fc1f674a5a42f2605371a4cf036d0441070e2f7455/setuptools-78.1.1-py3-none-any.whl",
+     "size": 1256462,
+     "sha256": "c3a9c4211ff4c309edb8b8c4f1cbfa7ae324c4ba9f91ff254e3d305b9fd54561"
+    },
+    {
+     "name": "six",
+     "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+     "size": 11050,
+     "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+    },
+    {
+     "name": "soundfile",
+     "url": "https://files.pythonhosted.org/packages/14/e9/6b761de83277f2f02ded7e7ea6f07828ec78e4b229b80e4ca55dd205b9dc/soundfile-0.13.1-py2.py3-none-win_amd64.whl",
+     "size": 1019162,
+     "sha256": "1e70a05a0626524a69e9f0f4dd2ec174b4e9567f4d8b6c11d38b5c289be36ee9"
+    },
+    {
+     "name": "sympy",
+     "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+     "size": 6299353,
+     "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5"
+    },
+    {
+     "name": "tokenizers",
+     "url": "https://files.pythonhosted.org/packages/75/68/1b4f928b15a36ed278332ac75d66d7eb65d865bf344d049c452c18447bf9/tokenizers-0.20.3-cp311-none-win_amd64.whl",
+     "size": 2381616,
+     "sha256": "88301aa0801f225725b6df5dea3d77c80365ff2362ca7e252583f2b4809c4cc0"
+    },
+    {
+     "name": "torch",
+     "url": "https://download-r2.pytorch.org/whl/cu126/torch-2.8.0%2Bcu126-cp311-cp311-win_amd64.whl",
+     "size": 2915474854,
+     "sha256": "cfb2c640a8955fbd8686c056802f53a512b610c098960d6dad5800cbc16c02b6"
+    },
+    {
+     "name": "torchaudio",
+     "url": "https://download-r2.pytorch.org/whl/cu126/torchaudio-2.8.0%2Bcu126-cp311-cp311-win_amd64.whl",
+     "size": 4242362,
+     "sha256": "48e19338f6fd24588cd5608b21087d00b80e30ddf054d9ce83f792a4b0025d7f"
+    },
+    {
+     "name": "tqdm",
+     "url": "https://files.pythonhosted.org/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl",
+     "size": 80199,
+     "sha256": "c293e525e6fef9c20e8728fd4612df02a0aa31bb5fe91ecd93e123b1b7bffa73"
+    },
+    {
+     "name": "transformers",
+     "url": "https://files.pythonhosted.org/packages/f9/9d/030cc1b3e88172967e22ee1d012e0d5e0384eb70d2a098d1669d549aea29/transformers-4.45.2-py3-none-any.whl",
+     "size": 9881312,
+     "sha256": "c551b33660cfc815bae1f9f097ecfd1e65be623f13c6ee0dda372bd881460210"
+    },
+    {
+     "name": "typing-extensions",
+     "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+     "size": 45571,
+     "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    },
+    {
+     "name": "urllib3",
+     "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
+     "size": 131087,
+     "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+-r requirements.txt
+pyinstaller>=6.10
+Pillow>=10.0      # tools/make_icons.py
+pytest>=8

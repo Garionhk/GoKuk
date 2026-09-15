@@ -1,0 +1,21 @@
+# Downloaded by Gokuk Setup
+runtime/
+models/
+cache/
+logs/
+songs/
+setup_state.json
+settings.json
+language.json
+
+# Build output
+build/
+dist/
+release/
+__pycache__/
+*.pyc
+
+# Local experiments
+spike/
+setup_test/
+portable_test/

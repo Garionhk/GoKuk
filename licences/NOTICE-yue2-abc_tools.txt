@@ -1,0 +1,4 @@
+Gokuk includes app/score/abc_dialect.py, adapted from
+https://github.com/multimodal-art-projection/YuE skills/yue2-music/scripts/abc_tools.py
+Copyright the YuE2 authors, licensed under the Apache License 2.0
+(LICENSE-yue2-skill-Apache-2.0.txt). Changes: section tracking added, CLI removed.
