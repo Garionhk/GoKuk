@@ -189,201 +189,201 @@
    "kind": "model",
    "component": "cover",
    "repo": "m-a-p/SheetSage2",
-   "revision": "eab522a8168e8b8b8c4856bf8609cd86198f01fe",
+   "revision": "7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384",
    "dest": "models/SheetSage2",
-   "size": 229015486,
+   "size": 229018966,
    "files": [
     {
      "path": ".gitattributes",
      "size": 134,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/.gitattributes"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/.gitattributes"
     },
     {
      "path": "LICENSE",
      "size": 20000,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/LICENSE"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/LICENSE"
     },
     {
      "path": "README.md",
-     "size": 10929,
+     "size": 12376,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/README.md"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/README.md"
     },
     {
      "path": "THIRD_PARTY_NOTICES.md",
      "size": 589,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/THIRD_PARTY_NOTICES.md"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/THIRD_PARTY_NOTICES.md"
     },
     {
      "path": "__init__.py",
      "size": 39,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/__init__.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/__init__.py"
     },
     {
      "path": "audio_sheetsage2.py",
      "size": 4289,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/audio_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/audio_sheetsage2.py"
     },
     {
      "path": "benchmark_results.json",
-     "size": 8643,
+     "size": 10676,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/benchmark_results.json"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/benchmark_results.json"
     },
     {
      "path": "config.json",
      "size": 2060,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/config.json"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/config.json"
     },
     {
      "path": "configuration_mert2.py",
      "size": 3860,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/configuration_mert2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/configuration_mert2.py"
     },
     {
      "path": "configuration_sheetsage2.py",
      "size": 4119,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/configuration_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/configuration_sheetsage2.py"
     },
     {
      "path": "durations_sheetsage2.py",
      "size": 296,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/durations_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/durations_sheetsage2.py"
     },
     {
      "path": "exports_sheetsage2.py",
      "size": 9820,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/exports_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/exports_sheetsage2.py"
     },
     {
      "path": "generation_sheetsage2.py",
      "size": 24722,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/generation_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/generation_sheetsage2.py"
     },
     {
      "path": "infer.py",
      "size": 4253,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/infer.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/infer.py"
     },
     {
      "path": "io_sheetsage2.py",
      "size": 1830,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/io_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/io_sheetsage2.py"
     },
     {
      "path": "labels_sheetsage2.py",
      "size": 978,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/labels_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/labels_sheetsage2.py"
     },
     {
      "path": "midi_sheetsage2.py",
      "size": 4230,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/midi_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/midi_sheetsage2.py"
     },
     {
      "path": "model.safetensors",
      "size": 228738564,
      "sha256": "b235f68091a5f5b644000f2b5acb57d1e70432aca2b34ab1b9cf27236e1f4274",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/model.safetensors"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/model.safetensors"
     },
     {
      "path": "modeling_mert2.py",
      "size": 17081,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/modeling_mert2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/modeling_mert2.py"
     },
     {
      "path": "modeling_sheetsage2.py",
      "size": 24602,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/modeling_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/modeling_sheetsage2.py"
     },
     {
      "path": "notation_sheetsage2.py",
      "size": 55775,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/notation_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/notation_sheetsage2.py"
     },
     {
      "path": "pipeline_sheetsage2.py",
      "size": 15022,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/pipeline_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/pipeline_sheetsage2.py"
     },
     {
      "path": "processing_sheetsage2.py",
      "size": 5346,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/processing_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/processing_sheetsage2.py"
     },
     {
      "path": "processor_config.json",
      "size": 277,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/processor_config.json"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/processor_config.json"
     },
     {
      "path": "render.py",
      "size": 1927,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/render.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/render.py"
     },
     {
      "path": "rendering_sheetsage2.py",
      "size": 15862,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/rendering_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/rendering_sheetsage2.py"
     },
     {
      "path": "requirements-render.txt",
      "size": 58,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/requirements-render.txt"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/requirements-render.txt"
     },
     {
      "path": "requirements.txt",
      "size": 190,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/requirements.txt"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/requirements.txt"
     },
     {
      "path": "schema_sheetsage2.py",
      "size": 3893,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/schema_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/schema_sheetsage2.py"
     },
     {
      "path": "setup_render.py",
      "size": 1540,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/setup_render.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/setup_render.py"
     },
     {
      "path": "tensors_sheetsage2.py",
      "size": 4645,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/tensors_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/tensors_sheetsage2.py"
     },
     {
      "path": "tokenization_sheetsage2.py",
      "size": 29913,
      "sha256": "",
-     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/eab522a8168e8b8b8c4856bf8609cd86198f01fe/tokenization_sheetsage2.py"
+     "url": "https://huggingface.co/m-a-p/SheetSage2/resolve/7cb7b16233d2f5ccb4d3295c2b501fdc31bc0384/tokenization_sheetsage2.py"
     }
    ]
   },
@@ -789,7 +789,7 @@
    "component": "cover",
    "python": "runtime/sheetsage/python.exe",
    "lock": "setup/locks/pylock.sheetsage.toml",
-   "size": 3016893305,
+   "size": 3563274993,
    "wheels": [
     {
      "name": "certifi",
@@ -974,15 +974,15 @@
     },
     {
      "name": "torch",
-     "url": "https://download-r2.pytorch.org/whl/cu126/torch-2.8.0%2Bcu126-cp311-cp311-win_amd64.whl",
-     "size": 2915474854,
-     "sha256": "cfb2c640a8955fbd8686c056802f53a512b610c098960d6dad5800cbc16c02b6"
+     "url": "https://download-r2.pytorch.org/whl/cu128/torch-2.8.0%2Bcu128-cp311-cp311-win_amd64.whl",
+     "size": 3461420395,
+     "sha256": "34c55443aafd31046a7963b63d30bc3b628ee4a704f826796c865fdfd05bb596"
     },
     {
      "name": "torchaudio",
-     "url": "https://download-r2.pytorch.org/whl/cu126/torchaudio-2.8.0%2Bcu126-cp311-cp311-win_amd64.whl",
-     "size": 4242362,
-     "sha256": "48e19338f6fd24588cd5608b21087d00b80e30ddf054d9ce83f792a4b0025d7f"
+     "url": "https://download-r2.pytorch.org/whl/cu128/torchaudio-2.8.0%2Bcu128-cp311-cp311-win_amd64.whl",
+     "size": 4678509,
+     "sha256": "7a1eb6154e05b8056b34c7a41495e09d57f79eb0180eb4e7f3bb2a61845ca8ea"
     },
     {
      "name": "tqdm",

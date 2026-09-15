@@ -60,7 +60,7 @@ ENVS = {
             "scipy==1.13.1", "mir_eval==0.8.2", "pretty_midi==0.2.10", "mido==1.3.3",
             "setuptools==78.1.1", "soundfile==0.13.1",
         ],
-        "index": "https://download.pytorch.org/whl/cu126",
+        "index": "https://download.pytorch.org/whl/cu128",   # cu128 also covers RTX 50-series (sm_120)
     },
 }
 
@@ -72,7 +72,7 @@ MODELS = {
     "YuE2-Vae-legacy": "legacy",
 }
 #: Files in the model repos Gokuk never needs.
-MODEL_SKIP_PREFIXES = ("assets/", "render_assets/", "examples/")
+MODEL_SKIP_PREFIXES = ("assets/", "render_assets/", "examples/", "benchmarks/")
 MODEL_SKIP_SUFFIXES = (".whl", ".md", ".png", ".jpg", ".gif", ".pdf")
 MODEL_KEEP = {"README.md", "LICENSE", "THIRD_PARTY_NOTICES.md"}
 
