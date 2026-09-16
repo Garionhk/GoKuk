@@ -1,4 +1,5 @@
-# Downloaded by Gokuk Setup
+# Everything Gokuk Setup downloads or the app writes. None of it belongs in git:
+# together it is ~25 GB, and every byte is reproducible from setup/catalog.json.
 runtime/
 models/
 cache/
@@ -12,10 +13,26 @@ language.json
 build/
 dist/
 release/
-__pycache__/
-*.pyc
+*.spec.bak
 
-# Local experiments
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local experiments and test installs (spike/ holds the Phase 0 runtime, ~25 GB)
 spike/
 setup_test/
 portable_test/
+
+# Editor and tool state
+.claude/
+.vscode/
+.idea/
+*.swp
+
+# Windows
+Thumbs.db
+desktop.ini
