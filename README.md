@@ -177,6 +177,3 @@ YuE2's code is Apache-2.0, and `app/score/abc_dialect.py` is adapted from its `a
 (notice and licence in `licences/`, shipped with the release). The YuE2, SheetSage2 and MERT model
 weights are **CC BY-NC 4.0** (non-commercial), which Setup makes users acknowledge before
 downloading.
-
-Gokuk's own licence is not decided yet. `LICENSE-2.0.txt` in the root is just a copy of the Apache
-2.0 text, not a statement that this project uses it - pick a licence and replace it.
