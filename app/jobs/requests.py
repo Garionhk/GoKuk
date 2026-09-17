@@ -24,6 +24,22 @@ def new_seed() -> int:
     return random.randint(1, 2**31 - 1)
 
 
+def take_seeds(count: int, first: int | None = None) -> list[int]:
+    """One seed per take, all different.
+
+    With ``first`` (Keep this seed), takes use first, first+1, ... so the first take
+    reproduces the song; otherwise every take gets a fresh random seed.
+    """
+    if first is not None:
+        return [(int(first) - 1 + i) % (2**31 - 1) + 1 for i in range(count)]
+    seeds: list[int] = []
+    while len(seeds) < count:
+        seed = new_seed()
+        if seed not in seeds:
+            seeds.append(seed)
+    return seeds
+
+
 def song_job(cfg: Config, *, style: str, lyrics: str, cot: str, seed: int, output_dir,
              abc: str | None = None, stage: str = "audio", cfg_scale: float | None = None) -> dict:
     decoder = "YuE2-Vae-legacy" if cfg.get("decoder") == "legacy" else "YuE2-Vae"

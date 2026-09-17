@@ -391,11 +391,12 @@ class CoverTab(QWidget):
             return
         takes = self.takes.value()
         self._take_total = takes
+        seeds = rq.take_seeds(takes)
         # One job per take, queued on the engine; each take gets its own seed and folder.
         for index in range(takes):
             take_title = title if takes == 1 else f"{title} · {t('take {n}', n=index + 1)}"
-            folder = self.window_.library.new_folder(title if takes == 1 else f"{title}-take{index + 1}")
-            seed = rq.new_seed()
+            folder = self.window_.library.new_folder(title, "" if takes == 1 else f"-take{index + 1}")
+            seed = seeds[index]
             song = Song(folder, title=take_title, kind="cover", style=style, lyrics=lyrics, seed=seed,
                         cot="melody", source_audio=Path(self.source).name)
             song.extra["style_builder"] = self.style_builder.style().to_dict()

@@ -147,15 +147,25 @@ class Library:
     def __init__(self, root: Path):
         self.root = Path(root)
 
-    def new_folder(self, title: str) -> Path:
+    def new_folder(self, title: str, suffix: str = "") -> Path:
+        """Create and return a new, empty folder for one song - never an existing one.
+
+        The folder is made here, not later by the engine, so several takes queued in
+        the same second cannot be handed the same name. ``suffix`` (e.g. "-take2") is
+        added after the title is shortened: shortening "a long title-take2" used to
+        cut the take number off, so every take pointed at take 1's folder.
+        """
         self.root.mkdir(parents=True, exist_ok=True)
         stamp = datetime.now().strftime("%Y-%m-%d_%H%M%S")
-        folder = self.root / f"{stamp}_{slug(title)}"
-        n = 2
-        while folder.exists():
-            folder = self.root / f"{stamp}_{slug(title)}-{n}"
-            n += 1
-        return folder
+        base = f"{stamp}_{slug(title)}{suffix}"
+        n = 1
+        while True:
+            folder = self.root / (base if n == 1 else f"{base}-{n}")
+            try:
+                folder.mkdir()
+                return folder
+            except FileExistsError:
+                n += 1
 
     def songs(self) -> list[Song]:
         if not self.root.is_dir():

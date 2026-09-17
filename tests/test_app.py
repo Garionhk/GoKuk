@@ -47,7 +47,7 @@ def test_gpu_profiles_and_verdict():
 def test_library_round_trip_and_trash(tmp_path):
     lib = Library(tmp_path / "songs")
     folder = lib.new_folder("晚風 Night / Wind?")
-    folder.mkdir()
+    assert folder.is_dir()                              # new_folder reserves it
     song = Song(folder, title="Night", style="pop", lyrics="[Verse]\nhi", seed=3, created="2026-09-12T10:00:00")
     song.extra["style_builder"] = {"language": "English"}
     song.save()
@@ -57,6 +57,19 @@ def test_library_round_trip_and_trash(tmp_path):
     assert loaded.extra["style_builder"] == {"language": "English"}
     lib.trash(loaded)
     assert lib.songs() == [] and (tmp_path / "songs" / "_trash" / folder.name).is_dir()
+
+
+def test_takes_never_share_a_folder_or_a_seed(tmp_path):
+    lib = Library(tmp_path / "songs")
+    title = "Born a little short but people still stare at me every day"   # longer than the slug limit
+    folders = [lib.new_folder(title, f"-take{n}") for n in range(1, 5)]
+    assert len(set(folders)) == 4 and all(f.is_dir() and not any(f.iterdir()) for f in folders)
+    assert [f.name[-6:] for f in folders] == ["-take1", "-take2", "-take3", "-take4"]
+    again = lib.new_folder(title, "-take1")                               # same second, same name
+    assert again not in folders and again.is_dir()
+    assert len(set(rq.take_seeds(4))) == 4
+    assert rq.take_seeds(3, first=41) == [41, 42, 43]
+    assert rq.take_seeds(2, first=2**31 - 1) == [2**31 - 1, 1]            # wraps, stays valid and distinct
 
 
 def test_titles_and_slugs():

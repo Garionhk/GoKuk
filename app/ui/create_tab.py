@@ -255,23 +255,20 @@ class CreateTab(QWidget):
         style, lyrics = self.style_builder.style_text(), self.lyrics.lyrics()
         title = self.title.text().strip() or title_from_lyrics(lyrics)
         if self.score_text:
-            seeds = [self._seed(i) for i in range(self.takes.value())]
-            self._run(style=style, lyrics=lyrics, title=title, cot="full", seeds=seeds, abc=self.score_text)
+            self._run(style=style, lyrics=lyrics, title=title, cot="full", seeds=self._seeds(self.takes.value()),
+                      abc=self.score_text)
             return
         cot = self.planning.currentData()
         if self.plan_first.isChecked() and cot != "off":
-            self._run(style=style, lyrics=lyrics, title=title, cot=cot, seeds=[self._seed(0)], stage="plan")
+            self._run(style=style, lyrics=lyrics, title=title, cot=cot, seeds=self._seeds(1), stage="plan")
             return
-        seeds = [self._seed(i) for i in range(self.takes.value())]
-        self._run(style=style, lyrics=lyrics, title=title, cot=cot, seeds=seeds)
+        self._run(style=style, lyrics=lyrics, title=title, cot=cot, seeds=self._seeds(self.takes.value()))
 
-    def _seed(self, index: int) -> int:
-        if self.lock_seed.isChecked():
-            return self.seed.value() + index
-        seed = rq.new_seed()
-        if index == 0:
-            self.seed.setValue(seed)
-        return seed
+    def _seeds(self, count: int) -> list[int]:
+        """A different seed for every take (see requests.take_seeds)."""
+        seeds = rq.take_seeds(count, self.seed.value() if self.lock_seed.isChecked() else None)
+        self.seed.setValue(seeds[0])
+        return seeds
 
     def sing_score(self, song: Song, abc: str, *, style: str | None = None, lyrics: str | None = None) -> None:
         """Sing a given score (after 'plan first'). If another job is running it waits its turn."""
@@ -286,7 +283,7 @@ class CreateTab(QWidget):
         self._take_total, self._take_index = len(seeds), 0
         cfg_scale = self.strength.value() or None
         for index, seed in enumerate(seeds):
-            folder = library.new_folder(title if len(seeds) == 1 else f"{title}-take{index + 1}")
+            folder = library.new_folder(title, "" if len(seeds) == 1 else f"-take{index + 1}")
             song = Song(folder, title=title if len(seeds) == 1 else f"{title} · {t('take {n}', n=index + 1)}",
                         kind="plan" if stage == "plan" else kind, style=style, lyrics=lyrics, seed=seed,
                         cot=cot, parent=parent)
